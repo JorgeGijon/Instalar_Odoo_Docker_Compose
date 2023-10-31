@@ -42,14 +42,14 @@ $ sudo chmod -R 777 etc
 $ sudo chmod -R 777 postgresql
 ```
 
-- If you want to start the server with a different port, change **10016** to another value in **docker-compose.yml** inside the parent dir:
+- Si desea iniciar el servidor con un puerto diferente, cambie **10016** a otro valor en **docker-compose.yml** dentro del directorio principal:
 
 ```
 puertos:
  - "10016:8069"
 ```
 
-- To run Odoo container in detached mode (be able to close terminal without stopping Odoo):
+- Para ejecutar el contenedor Odoo en modo independiente (y poder cerrar la terminal sin detener Odoo):
 
 ```
 docker-compose up -d
@@ -64,38 +64,38 @@ docker-compose up -d
  restart: always             # run as a service
 ```
 
-- To increase maximum number of files watching from 8192 (default) to **524288**. In order to avoid error when we run multiple Odoo instances. This is an *optional step*. These commands are for Ubuntu user:
+- Para aumentar el número máximo de archivos que se ven de 8192 (predeterminado) a **524288** . Para evitar errores cuando ejecutamos múltiples instancias de Odoo. `Este es un paso opcional` . Estos comandos son para usuarios de Ubuntu:
 
 ```
 $ if grep -qF "fs.inotify.max_user_watches" /etc/sysctl.conf; then echo $(grep -F "fs.inotify.max_user_watches" /etc/sysctl.conf); else echo "fs.inotify.max_user_watches = 524288" | sudo tee -a /etc/sysctl.conf; fi
 $ sudo sysctl -p    # apply new config immediately
 ``` 
 
-## Custom addons
+## Complementos personalizados
 
 The **addons/** folder contains custom addons. Just put your custom addons if you have any.
 
-## Odoo configuration & log
+## Configuración y registro de Odoo
 
-* To change Odoo configuration, edit file: **etc/odoo.conf**.
+* Para cambiar la configuración de Odoo, edite el archivo: **etc/odoo.conf**.
 * Log file: **etc/odoo-server.log**
-* Default database password (**admin_passwd**) is `jorgegr.info`, please change it @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
+* La contraseña por defecto de la BD es (**admin_passwd**) es `jorgegr.info`, puede cambiarse en @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
 
-## Odoo container management
+## Gestión de contenedores Odoo
 
-**Run Odoo**:
+**Ejecute Odoo**:
 
 ``` bash
 docker-compose up -d
 ```
 
-**Restart Odoo**:
+**Reiniciar Odoo**:
 
 ``` bash
 docker-compose restart
 ```
 
-**Stop Odoo**:
+**Detener Odoo**:
 
 ``` bash
 docker-compose down
@@ -103,9 +103,9 @@ docker-compose down
 
 ## Live chat
 
-In [docker-compose.yml#L21](docker-compose.yml#L21), we exposed port **20016** for live-chat on host.
+En [docker-compose.yml#L21](docker-compose.yml#L21), expusimos el puerto **20016** para chat en vivo en el host.
 
-Configuring **nginx** to activate live chat feature (in production):
+Configuración **nginx** para activar la función de chat en vivo (en producción):
 
 ``` conf
 #...
@@ -124,7 +124,7 @@ server {
 * odoo:16.0
 * postgres:15
 
-## Odoo 16.0 screenshots after successful installation.
+## para activar la función de chat en vivo (en producción).
 
 <img src="screenshots/odoo-16-welcome-screenshot.png" width="50%">
 
