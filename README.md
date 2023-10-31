@@ -1,6 +1,6 @@
 # Instalar Odoo 16.0 con Docker Compose (Soporte para multiples instancias Odoo en servidor Linux Ubuntu).
 
-## Instalación rápida
+## Instalación rápida en servidor linux
 
 Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/) usted mismo, luego ejecute lo siguiente para configurar la primera instancia de Odoo @ `localhost:10016` (master password por defecto: `jorgegr.info`):
 
@@ -22,7 +22,7 @@ Si `curl` no está disponible, instálelo:
 
 ``` bash
 $ sudo apt-get install curl
-# or
+# o bien
 $ sudo yum install curl
 ```
 
