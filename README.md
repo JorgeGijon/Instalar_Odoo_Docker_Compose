@@ -2,12 +2,12 @@
 
 ## Instalación rápida en servidor linux
 
-Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/) usted mismo, luego ejecute lo siguiente para configurar la primera instancia de Odoo @ `localhost:10001` (master password por defecto: `jorgegr.info`):
+Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/) usted mismo, luego ejecute lo siguiente para configurar la primera instancia de Odoo @ `localhost:10001` (master password por defecto: `jorgegr.com`):
 
 ``` bash
 curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-one 10001 20001
 ```
-y/o ejecute lo siguiente para configurar otra instancia Odoo @ `localhost:10002` (default master password: `jorgegr.info`):
+y/o ejecute lo siguiente para configurar otra instancia Odoo @ `localhost:10002` (default master password: `jorgegr.com`):
 
 ``` bash  run.sh
 curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-two 10002 20002
@@ -79,7 +79,7 @@ La carpeta **addons/** contiene complementos personalizados. Simplemente coloque
 
 * Para cambiar la configuración de Odoo, edite el archivo: **etc/odoo.conf**.
 * Log file: **etc/odoo-server.log**
-* La contraseña por defecto de la BD (**admin_passwd**) es `jorgegr.info`, puede cambiarse en @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
+* La contraseña por defecto de la BD (**admin_passwd**) es `jorgegr.com`, puede cambiarse en @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
 
 ## Gestión de contenedores Odoo
 
