@@ -2,23 +2,23 @@
 
 ## Instalación rápida
 
-Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/) yourself, then run the following to set up first Odoo instance @ `localhost:10016` (master password por defecto: `jorgegr.info`):
+Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/) usted mismo, luego ejecute lo siguiente para configurar la primera instancia de Odoo @ `localhost:10016` (master password por defecto: `jorgegr.info`):
 
 ``` bash
 curl -s https://raw.githubusercontent.com/minhng92/odoo-16-docker-compose/master/run.sh | sudo bash -s odoo-one 10016 20016
 ```
-and/or run the following to set up another Odoo instance @ `localhost:11016` (default master password: `jorgegr.info`):
+y/o ejecute lo siguiente para configurar otra instancia Odoo @ `localhost:11016` (default master password: `jorgegr.info`):
 
 ``` bash
 curl -s https://raw.githubusercontent.com/minhng92/odoo-16-docker-compose/master/run.sh | sudo bash -s odoo-two 11016 21016
 ```
 
-Some arguments:
-* First argument (**odoo-one**): Odoo deploy folder
-* Second argument (**10016**): Odoo port
-* Third argument (**20016**): live chat port
+Algunos argumentos:
+* **odoo-one**: carpeta de implementación de Odoo
+* **10016**: puerto Odoo
+* **20016**: puerto live chat
 
-If `curl` is not found, install it:
+Si `curl` no está disponible, instálelo:
 
 ``` bash
 $ sudo apt-get install curl
@@ -26,15 +26,15 @@ $ sudo apt-get install curl
 $ sudo yum install curl
 ```
 
-## Usage
+## Uso
 
-Start the container:
+Inicie el contenedor:
 ``` sh
 docker-compose up
 ```
-Then open `localhost:10016` to access Odoo 16.0.
+Luego abra `localhost:10016` para acceder a Odoo 16.0.
 
-- **If you get any permission issues**, change the folder permission to make sure that the container is able to access the directory:
+- **Si tiene algún problema con los permisos**, cambie el permiso de la carpeta para asegurarse de que el contenedor pueda acceder al directorio:
 
 ``` sh
 $ sudo chmod -R 777 addons
