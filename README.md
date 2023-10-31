@@ -5,12 +5,12 @@
 Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/) usted mismo, luego ejecute lo siguiente para configurar la primera instancia de Odoo @ `localhost:10016` (master password por defecto: `jorgegr.info`):
 
 ``` bash
-curl -s https://raw.githubusercontent.com/JorgeGijon/odoo-16-docker-compose/master/run.sh | sudo bash -s odoo-one 10016 20016
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-one 10016 20016
 ```
 y/o ejecute lo siguiente para configurar otra instancia Odoo @ `localhost:11016` (default master password: `jorgegr.info`):
 
-``` bash
-curl -s https://raw.githubusercontent.com/JorgeGijon/odoo-16-docker-compose/master/run.sh | sudo bash -s odoo-two 11016 21016
+``` bash  run.sh
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-two 11016 21016
 ```
 
 Algunos argumentos:
