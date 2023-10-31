@@ -1,13 +1,13 @@
 # Instalar Odoo 16.0 con Docker Compose (Soporte para multiples instancias Odoo en servidor Linux Ubuntu).
 
-## Instalación rápida en servidor linux
+## Instalación rápida en servidor linux Unbuntu
 
-Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/) usted mismo, luego ejecute lo siguiente para configurar la primera instancia de Odoo @ `localhost:10001` (master password por defecto: `jorgegr.com`):
+Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/) usted mismo, luego ejecute lo siguiente para configurar la primera instancia de Odoo @ `localhost:10001` (`master password` por defecto: `jorgegr.com`):
 
 ``` bash
 curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-one 10001 20001
 ```
-y/o ejecute lo siguiente para configurar otra instancia Odoo @ `localhost:10002` (default master password: `jorgegr.com`):
+y/o ejecute lo siguiente para configurar otra instancia Odoo @ `localhost:10002` (`master password` por defecto: `jorgegr.com`):
 
 ``` bash  run.sh
 curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-two 10002 20002
@@ -18,7 +18,7 @@ Algunos argumentos:
 * **10001**: puerto Odoo
 * **20016**: puerto live chat
 
-Si `curl` no está disponible, instálelo:
+Si `curl` no está disponible, instalar:
 
 ``` bash
 $ sudo apt-get install curl
