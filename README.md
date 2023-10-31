@@ -124,7 +124,7 @@ server {
 * odoo:16.0
 * postgres:15
 
-## para activar la función de chat en vivo (en producción).
+## Capturas de pantalla de Odoo 16.0 después de desplegar
 
 <img src="screenshots/odoo-16-welcome-screenshot.png" width="50%" style="margin:0 auto 0 auto;">
 
