@@ -2,7 +2,7 @@
 DESTINATION=$1
 PORT=$2
 CHAT=$3
-# clone Odoo directory
+# clonar directorio Odoo
 git clone --depth=1 https://github.com/JorgeGijon/Instalar_Odoo_Docker_Compose $DESTINATION
 rm -rf $DESTINATION/.git
 # set permission
@@ -13,7 +13,7 @@ if grep -qF "fs.inotify.max_user_watches" /etc/sysctl.conf; then echo $(grep -F 
 sudo sysctl -p
 sed -i 's/10016/'$PORT'/g' $DESTINATION/docker-compose.yml
 sed -i 's/20016/'$CHAT'/g' $DESTINATION/docker-compose.yml
-# run Odoo
+# correr Odoo
 docker-compose -f $DESTINATION/docker-compose.yml up -d
 
 echo 'Started Odoo @ http://localhost:'$PORT' | Master Password: jorgegr.info | Live chat port: '$CHAT
