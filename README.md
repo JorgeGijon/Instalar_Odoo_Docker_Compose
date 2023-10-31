@@ -2,20 +2,20 @@
 
 ## Instalación rápida en servidor linux
 
-Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/) usted mismo, luego ejecute lo siguiente para configurar la primera instancia de Odoo @ `localhost:10016` (master password por defecto: `jorgegr.info`):
+Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/) usted mismo, luego ejecute lo siguiente para configurar la primera instancia de Odoo @ `localhost:10001` (master password por defecto: `jorgegr.info`):
 
 ``` bash
-curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-one 10016 20016
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-one 10001 20001
 ```
-y/o ejecute lo siguiente para configurar otra instancia Odoo @ `localhost:11016` (default master password: `jorgegr.info`):
+y/o ejecute lo siguiente para configurar otra instancia Odoo @ `localhost:10002` (default master password: `jorgegr.info`):
 
 ``` bash  run.sh
-curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-two 11016 21016
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-two 10002 20002
 ```
 
 Algunos argumentos:
 * **odoo-one**: carpeta de implementación de Odoo
-* **10016**: puerto Odoo
+* **10001**: puerto Odoo
 * **20016**: puerto live chat
 
 Si `curl` no está disponible, instálelo:
@@ -32,7 +32,7 @@ Inicie el contenedor:
 ``` sh
 docker-compose up
 ```
-Luego abra `localhost:10016` para acceder a Odoo 16.0.
+Luego abra `localhost:10001` para acceder a Odoo 16.0.
 
 - **Si tiene algún problema con los permisos**, cambie el permiso de la carpeta para asegurarse de que el contenedor pueda acceder al directorio:
 
@@ -42,11 +42,11 @@ $ sudo chmod -R 777 etc
 $ sudo chmod -R 777 postgresql
 ```
 
-- Si desea iniciar el servidor con un puerto diferente, cambie **10016** a otro valor en **docker-compose.yml** dentro del directorio principal:
+- Si desea iniciar el servidor con un puerto diferente, cambie **10001** a otro valor en **docker-compose.yml** dentro del directorio principal:
 
 ```
 puertos:
- - "10016:8069"
+ - "10001:8069"
 ```
 
 - Para ejecutar el contenedor Odoo en modo independiente (y poder cerrar la terminal sin detener Odoo):
