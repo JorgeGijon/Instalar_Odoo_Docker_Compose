@@ -118,7 +118,7 @@ docker-compose down
 $ sudo docker ps
 $ sudo docker rm [contenedor_Id]
 ```
-
+<!--
 ## Live chat
 
 En [docker-compose.yml#L21](docker-compose.yml#L21), expusimos el puerto **20016** para chat en vivo en el host.
@@ -136,6 +136,7 @@ server {
 }
 #...
 ```
+-->
 
 ## docker-compose.yml
 
@@ -148,6 +149,8 @@ server {
 
 <img src="screenshots/odoo-16-apps-screenshot.png" width="100%">
 
+<!--
 <img src="screenshots/odoo-16-sales-screen.png" width="100%">
 
 <img src="screenshots/odoo-16-product-form.png" width="100%">
+-->
