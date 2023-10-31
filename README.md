@@ -45,7 +45,7 @@ $ sudo chmod -R 777 postgresql
 - If you want to start the server with a different port, change **10016** to another value in **docker-compose.yml** inside the parent dir:
 
 ```
-ports:
+puertos:
  - "10016:8069"
 ```
 
