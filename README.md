@@ -2,12 +2,12 @@
 
 ## Instalación rápida
 
-Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run the following to set up first Odoo instance @ `localhost:10016` (default master password: `minhng.info`):
+Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/) yourself, then run the following to set up first Odoo instance @ `localhost:10016` (master password por defecto: `jorgegr.info`):
 
 ``` bash
 curl -s https://raw.githubusercontent.com/minhng92/odoo-16-docker-compose/master/run.sh | sudo bash -s odoo-one 10016 20016
 ```
-and/or run the following to set up another Odoo instance @ `localhost:11016` (default master password: `minhng.info`):
+and/or run the following to set up another Odoo instance @ `localhost:11016` (default master password: `jorgegr.info`):
 
 ``` bash
 curl -s https://raw.githubusercontent.com/minhng92/odoo-16-docker-compose/master/run.sh | sudo bash -s odoo-two 11016 21016
