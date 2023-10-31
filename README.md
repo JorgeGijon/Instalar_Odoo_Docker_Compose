@@ -87,18 +87,36 @@ La carpeta **addons/** contiene complementos personalizados. Simplemente coloque
 
 ``` bash
 docker-compose up -d
+# o bien
+$ sudo docker ps
+$ sudo docker start [contenedor_Id]
 ```
 
 **Reiniciar Odoo**:
 
 ``` bash
 docker-compose restart
+# o bien
+$ sudo docker ps
+$ sudo docker restart [contenedor_Id]
 ```
 
 **Detener Odoo**:
 
 ``` bash
 docker-compose down
+# o bien
+$ sudo docker ps
+$ sudo docker stop [contenedor_Id]
+```
+
+**Eliminar Odoo**:
+
+``` bash
+docker-compose down
+# o bien
+$ sudo docker ps
+$ sudo docker rm [contenedor_Id]
 ```
 
 ## Live chat
