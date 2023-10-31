@@ -79,7 +79,7 @@ La carpeta **addons/** contiene complementos personalizados. Simplemente coloque
 
 * Para cambiar la configuración de Odoo, edite el archivo: **etc/odoo.conf**.
 * Log file: **etc/odoo-server.log**
-* La contraseña por defecto de la BD es (**admin_passwd**) es `jorgegr.info`, puede cambiarse en @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
+* La contraseña por defecto de la BD (**admin_passwd**) es `jorgegr.info`, puede cambiarse en @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
 
 ## Gestión de contenedores Odoo
 
