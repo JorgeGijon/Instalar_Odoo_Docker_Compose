@@ -126,7 +126,7 @@ server {
 
 ## para activar la función de chat en vivo (en producción).
 
-<img src="screenshots/odoo-16-welcome-screenshot.png" width="50%">
+<img src="screenshots/odoo-16-welcome-screenshot.png" width="50%" style="margin:0 auto 0 auto;">
 
 <img src="screenshots/odoo-16-apps-screenshot.png" width="100%">
 
