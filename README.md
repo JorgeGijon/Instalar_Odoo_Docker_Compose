@@ -2,12 +2,20 @@
 
 ## Instalación rápida en servidor linux Unbuntu
 
-Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/) usted mismo, luego ejecute lo siguiente para configurar la primera instancia de Odoo @ `localhost:10001` (`master password` por defecto: `jorgegr.com`):
+Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/).
+
+Si `curl` no está disponible, instalar:
+``` bash
+$ sudo apt-get install curl
+# o bien
+$ sudo yum install curl
+```
+Ejecutar siguiente `curl` para configurar la primera instancia de Odoo @ `localhost:10001` (`master password` por defecto: `jorgegr.com`):
 
 ``` bash
 curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-one 10001 20001
 ```
-y/o ejecute lo siguiente para configurar otra instancia Odoo @ `localhost:10002` (`master password` por defecto: `jorgegr.com`):
+y/o ejecute el siguiente para configurar otra instancia Odoo @ `localhost:10002` (`master password` por defecto: `jorgegr.com`):
 
 ``` bash  run.sh
 curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-two 10002 20001
@@ -18,13 +26,7 @@ Argumentos:
 * **10001**:    puerto Odoo
 * **20001**:    puerto live chat `opcional`
 
-Si `curl` no está disponible, instalar:
 
-``` bash
-$ sudo apt-get install curl
-# o bien
-$ sudo yum install curl
-```
 
 ## Uso
 
