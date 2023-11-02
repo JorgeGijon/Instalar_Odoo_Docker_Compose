@@ -2,7 +2,7 @@
 ============================================
 
 <p align="center">
-<b><a href="#instalacion">Instalación</a></b>
+<b><a href="#instalación">Instalación</a></b>
 |
 <b><a href="#uso">Uso</a></b>
 |
@@ -38,7 +38,7 @@ y/o ejecute el siguiente para configurar otra instancia Odoo @ `localhost:10002`
 curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-02 10002 20001 pass.por.defecto
 ```
 
-## :green_square: Uso
+## :Uso
 
 Inicie el contenedor:
 ``` sh
@@ -171,7 +171,7 @@ server {
 <img src="screenshots/odoo-16-product-form.png" width="100%">
 -->
 
-# :bangbang: ANEXO :bangbang:
+# Anexo
 
 ## Instalar el controlador de impresora (Opcional):
 Si necesitas la funcionalidad de impresión en PDF desde Odoo, instala el controlador de impresora CUPS:
