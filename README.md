@@ -159,7 +159,7 @@ server {
 <img src="screenshots/odoo-16-product-form.png" width="100%">
 -->
 
-# ANEXO
+# ANEXO :ballot_box_with_check:
 
 ## Instalar el controlador de impresora (Opcional):
 Si necesitas la funcionalidad de impresión en PDF desde Odoo, instala el controlador de impresora CUPS:
