@@ -9,23 +9,25 @@ $ sudo apt-get install curl
 # o bien
 $ sudo yum install curl
 ```
-Ejecutar siguiente `curl` para configurar la primera instancia de Odoo @ `localhost:10001` (`master password` por defecto: `jorgegr.com`):
+Ejecutar siguiente `curl` para configurar la primera instancia de Odoo @ `localhost:10001`:
 ``` bash
-curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-01 10001 20001
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-01 10001 20001 pass.por.defecto
 ```
-Argumentos:
+Argumentos para reemplazar:
 * **odoo-01**: carpeta de implementación de Odoo
 * **10001**:    puerto Odoo
-* **20001**:    puerto live chat `opcional`
+* **20001**:    puerto live chat
+* **pass.por.defecto**:    master password BD
 
-y/o ejecute el siguiente para configurar otra instancia Odoo @ `localhost:10002` (`master password` por defecto: `jorgegr.com`):
+y/o ejecute el siguiente para configurar otra instancia Odoo @ `localhost:10002`:
 ``` bash  run.sh
-curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-02 10002 20001
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-02 10002 20001 pass.por.defecto
 ```
-Argumentos:
+Argumentos para reemplazar:
 * **odoo-02**: carpeta de implementación de Odoo
 * **10002**:    puerto Odoo
 * **20001**:    puerto live chat `opcional`
+* **pass.por.defecto**:    master password BD
 
 ## Uso
 
@@ -80,7 +82,7 @@ La carpeta **addons/** contiene complementos personalizados. Simplemente coloque
 
 * Para cambiar la configuración de Odoo, edite el archivo: **etc/odoo.conf**.
 * Log file: **etc/odoo-server.log**
-* La contraseña por defecto de la BD (**admin_passwd**) es `jorgegr.com`, puede cambiarse en @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
+* La contraseña por defecto de la BD (**admin_passwd**) es `pass.por.defecto`, puede cambiarse en @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
 
 ## Gestión de contenedores Odoo
 
