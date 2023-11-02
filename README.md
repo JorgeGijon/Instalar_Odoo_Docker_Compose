@@ -13,17 +13,19 @@ Ejecutar siguiente `curl` para configurar la primera instancia de Odoo @ `localh
 ``` bash
 curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-01 10001 20001
 ```
-y/o ejecute el siguiente para configurar otra instancia Odoo @ `localhost:10002` (`master password` por defecto: `jorgegr.com`):
-``` bash  run.sh
-curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-02 10002 20001
-```
-
 Argumentos:
 * **odoo-01**: carpeta de implementación de Odoo
 * **10001**:    puerto Odoo
 * **20001**:    puerto live chat `opcional`
 
-
+y/o ejecute el siguiente para configurar otra instancia Odoo @ `localhost:10002` (`master password` por defecto: `jorgegr.com`):
+``` bash  run.sh
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-02 10002 20001
+```
+Argumentos:
+* **odoo-02**: carpeta de implementación de Odoo
+* **10002**:    puerto Odoo
+* **20001**:    puerto live chat `opcional`
 
 ## Uso
 
