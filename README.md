@@ -16,7 +16,7 @@ curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compos
 Algunos argumentos:
 * **odoo-one**: carpeta de implementación de Odoo
 * **10001**: puerto Odoo
-* **20001**: puerto live chat 
+* **20001**: puerto live chat  
 
 Si `curl` no está disponible, instalar:
 
