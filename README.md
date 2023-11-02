@@ -1,4 +1,4 @@
-# Instalar Odoo 16.0 con Docker Compose (Soporte para multiples instancias Odoo en servidor Linux Ubuntu).
+# Desplegar multiples instancias Odoo 16.0, con Docker Compose, en servidor Linux Ubuntu.
 
 ## Instalación rápida en servidor linux Unbuntu
 
@@ -10,13 +10,13 @@ curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compos
 y/o ejecute lo siguiente para configurar otra instancia Odoo @ `localhost:10002` (`master password` por defecto: `jorgegr.com`):
 
 ``` bash  run.sh
-curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-two 10002 20002
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-two 10002 20001
 ```
 
 Algunos argumentos:
 * **odoo-one**: carpeta de implementación de Odoo
 * **10001**: puerto Odoo
-* **20016**: puerto live chat
+* **20001**: puerto live chat 
 
 Si `curl` no está disponible, instalar:
 
@@ -121,16 +121,16 @@ $ sudo docker rm [contenedor_Id]
 <!--
 ## Live chat
 
-En [docker-compose.yml#L21](docker-compose.yml#L21), expusimos el puerto **20016** para chat en vivo en el host.
+En [docker-compose.yml#L21](docker-compose.yml#L21), expusimos el puerto **20001** para chat.
 
-Configuración **nginx** para activar la función de chat en vivo (en producción):
+Configuración [nginx](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/) para activar la función de chat (en producción):
 
 ``` conf
 #...
 server {
     #...
     location /longpolling/ {
-        proxy_pass http://0.0.0.0:20016/longpolling/;
+        proxy_pass http://0.0.0.0:20001/longpolling/;
     }
     #...
 }
