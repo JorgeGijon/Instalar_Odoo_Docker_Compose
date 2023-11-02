@@ -27,7 +27,7 @@ y/o ejecute el siguiente para configurar otra instancia Odoo @ `localhost:10002`
 curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-02 10002 20001 pass.por.defecto
 ```
 
-## :green_circle: Uso
+## :green_square: Uso
 
 Inicie el contenedor:
 ``` sh
