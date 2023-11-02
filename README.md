@@ -11,15 +11,15 @@ $ sudo yum install curl
 ```
 Ejecutar siguiente `curl` para configurar la primera instancia de Odoo @ `localhost:10001` (`master password` por defecto: `jorgegr.com`):
 ``` bash
-curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-one 10001 20001
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-01 10001 20001
 ```
 y/o ejecute el siguiente para configurar otra instancia Odoo @ `localhost:10002` (`master password` por defecto: `jorgegr.com`):
 ``` bash  run.sh
-curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-two 10002 20001
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-02 10002 20001
 ```
 
 Argumentos:
-* **odoo-one**: carpeta de implementación de Odoo
+* **odoo-01**: carpeta de implementación de Odoo
 * **10001**:    puerto Odoo
 * **20001**:    puerto live chat `opcional`
 
@@ -92,7 +92,6 @@ $ sudo docker start [contenedor_Id]
 ```
 
 **Reiniciar Odoo**:
-
 ``` bash
 docker-compose restart
 # o bien
@@ -101,7 +100,6 @@ $ sudo docker restart [contenedor_Id]
 ```
 
 **Detener Odoo**:
-
 ``` bash
 docker-compose down
 # o bien
@@ -110,13 +108,18 @@ $ sudo docker stop [contenedor_Id]
 ```
 
 **Eliminar Odoo**:
-
 ``` bash
 docker-compose down
 # o bien
 $ sudo docker ps
 $ sudo docker rm [contenedor_Id]
 ```
+
+**Eliminar Carpeta Odoo**:
+``` bash
+$ sudo rm -r odoo-01  #borrar carpeta contenedora
+```
+
 <!--
 ## Live chat
 
