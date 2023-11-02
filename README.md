@@ -13,10 +13,10 @@ y/o ejecute lo siguiente para configurar otra instancia Odoo @ `localhost:10002`
 curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-two 10002 20001
 ```
 
-Algunos argumentos:
+Argumentos:
 * **odoo-one**: carpeta de implementación de Odoo
-* **10001**: puerto Odoo
-* **20001**: puerto live chat 
+* **10001**:    puerto Odoo
+* **20001**:    puerto live chat `opcional`
 
 Si `curl` no está disponible, instalar:
 
