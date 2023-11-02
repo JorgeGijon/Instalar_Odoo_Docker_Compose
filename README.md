@@ -1,6 +1,17 @@
 # Desplegar multiples instancias Odoo 16.0, con Docker Compose, en servidor Linux Ubuntu.
+============================================
 
-## Instalación rápida en servidor linux Unbuntu
+<p align="center">
+<b><a href="#instalacion">Instalación</a></b>
+|
+<b><a href="#uso">Uso</a></b>
+|
+<b><a href="#anexo">Anexos</a></b>
+</p>
+
+<br>
+
+## Instalación
 
 Instalar [docker](https://docs.docker.com/get-docker/) y [docker-compose](https://docs.docker.com/compose/install/).
 Si `curl` no está disponible, instalar:
@@ -71,6 +82,7 @@ docker-compose up -d
 $ if grep -qF "fs.inotify.max_user_watches" /etc/sysctl.conf; then echo $(grep -F "fs.inotify.max_user_watches" /etc/sysctl.conf); else echo "fs.inotify.max_user_watches = 524288" | sudo tee -a /etc/sysctl.conf; fi
 $ sudo sysctl -p    # apply new config immediately
 ``` 
+<p align="right"><a href="#top">:arrow_up:</a></p>
 
 ## Complementos personalizados
 
