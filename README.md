@@ -39,7 +39,7 @@ y/o ejecute el siguiente para configurar otra instancia Odoo @ `localhost:10002`
 curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-02 10002 20001 pass.por.defecto
 ```
 
-## :Uso
+## Uso
 
 Inicie el contenedor:
 ``` sh
@@ -88,24 +88,24 @@ $ sudo sysctl -p    # apply new config immediately
 ## Complementos
 
 La carpeta **addons/** contiene complementos personalizados. Simplemente coloque sus complementos personalizados si tiene alguno.
+<p align="right"><a href="#top">:arrow_up:</a></p>
 
 ## Configuración y registro de Odoo
 
 * Para cambiar la configuración de Odoo, edite el archivo: **etc/odoo.conf**.
 * Log file: **etc/odoo-server.log**
 * La contraseña por defecto de la BD (**admin_passwd**) es `pass.por.defecto`, puede cambiarse en @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
+<p align="right"><a href="#top">:arrow_up:</a></p>
 
 ## Gestión de contenedores Odoo
 
 **Ejecute Odoo**:
-
 ``` bash
 docker-compose up -d
 # o bien
 $ sudo docker ps
 $ sudo docker start [contenedor_Id]
 ```
-
 **Reiniciar Odoo**:
 ``` bash
 docker-compose restart
@@ -113,7 +113,6 @@ docker-compose restart
 $ sudo docker ps
 $ sudo docker restart [contenedor_Id]
 ```
-
 **Detener Odoo**:
 ``` bash
 docker-compose down
@@ -121,7 +120,6 @@ docker-compose down
 $ sudo docker ps
 $ sudo docker stop [contenedor_Id]
 ```
-
 **Eliminar Odoo**:
 ``` bash
 docker-compose down
@@ -129,11 +127,11 @@ docker-compose down
 $ sudo docker ps
 $ sudo docker rm [contenedor_Id]
 ```
-
 **Eliminar Carpeta Odoo**:
 ``` bash
 $ sudo rm -r odoo-01  #borrar carpeta contenedora
 ```
+<p align="right"><a href="#top">:arrow_up:</a></p>
 
 <!--
 ## Live chat
@@ -153,6 +151,7 @@ server {
 }
 #...
 ```
+<p align="right"><a href="#top">:arrow_up:</a></p>
 -->
 
 ## docker-compose.yml
@@ -171,6 +170,7 @@ server {
 
 <img src="screenshots/odoo-16-product-form.png" width="100%">
 -->
+<p align="right"><a href="#top">:arrow_up:</a></p>
 
 # Anexo
 
@@ -191,3 +191,4 @@ Después de instalar todas las dependencias, reinicia el servidor para asegurart
 ``` bash
 sudo reboot
 ``` 
+<p align="right"><a href="#top">:arrow_up:</a></p>
