@@ -1,10 +1,11 @@
 # Desplegar multiples instancias Odoo 16.0, con Docker Compose, en servidor Linux Ubuntu.
-============================================
-
+<!-- Menu  -->
 <p align="center">
 <b><a href="#instalación">Instalación</a></b>
 |
 <b><a href="#uso">Uso</a></b>
+|
+<b><a href="#complementos">Complementos</a></b>
 |
 <b><a href="#anexo">Anexos</a></b>
 </p>
@@ -84,7 +85,7 @@ $ sudo sysctl -p    # apply new config immediately
 ``` 
 <p align="right"><a href="#top">:arrow_up:</a></p>
 
-## Complementos personalizados
+## Complementos
 
 La carpeta **addons/** contiene complementos personalizados. Simplemente coloque sus complementos personalizados si tiene alguno.
 
