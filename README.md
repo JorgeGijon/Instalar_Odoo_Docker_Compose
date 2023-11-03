@@ -86,57 +86,19 @@ $ sudo sysctl -p    # apply new config immediately
 <p align="right"><a href="#top">:arrow_up:</a></p>
 
 ## Complementos
-
 La carpeta **addons/** contiene complementos personalizados. Simplemente coloque sus complementos personalizados si tiene alguno.
-<p align="right"><a href="#top">:arrow_up:</a></p>
+<!--<p align="right"><a href="#top">:arrow_up:</a></p>-->
 
 ## Configuración y registro de Odoo
-
 * Para cambiar la configuración de Odoo, edite el archivo: **etc/odoo.conf**.
 * Log file: **etc/odoo-server.log**
 * La contraseña por defecto de la BD (**admin_passwd**) es `pass.por.defecto`, puede cambiarse en @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
-<p align="right"><a href="#top">:arrow_up:</a></p>
-
-## Gestión de contenedores Odoo
-
-**Ejecute Odoo**:
-``` bash
-docker-compose up -d
-# o bien
-$ sudo docker ps
-$ sudo docker start [contenedor_Id]
-```
-**Reiniciar Odoo**:
-``` bash
-docker-compose restart
-# o bien
-$ sudo docker ps
-$ sudo docker restart [contenedor_Id]
-```
-**Detener Odoo**:
-``` bash
-docker-compose down
-# o bien
-$ sudo docker ps
-$ sudo docker stop [contenedor_Id]
-```
-**Eliminar Odoo**:
-``` bash
-docker-compose down
-# o bien
-$ sudo docker ps
-$ sudo docker rm [contenedor_Id]
-```
-**Eliminar Carpeta Odoo**:
-``` bash
-$ sudo rm -r odoo-01  #borrar carpeta contenedora
-```
-<p align="right"><a href="#top">:arrow_up:</a></p>
+<!--<p align="right"><a href="#top">:arrow_up:</a></p>-->
 
 ## docker-compose.yml
-
 * odoo:16.0
 * postgres:15
+<!--<p align="right"><a href="#top">:arrow_up:</a></p>-->
 
 ## Capturas de pantalla de Odoo 16.0 después de desplegar
 
@@ -149,11 +111,12 @@ $ sudo rm -r odoo-01  #borrar carpeta contenedora
 
 # Anexo
 
-## Pasos en despliegue Odoo y configuración servidor
-Después de instalar Odoo:
+Después de instalar Odoo se recomiendan algunas opciones:
 * [Despliegue Odoo en puerto 80 y 443](documents/servicios_web.md)
 * [Despliegue Live Chat](documents/live_chat.md)
+<p align="right"><a href="#top">:arrow_up:</a></p>
 
-> [!NOTE]
-> [Recomendaciones Odoo](documents/recomendaciones_odoo.md)
+Documentación adicional de interés:
+* [Recomendaciones Odoo](documents/recomendaciones_odoo.md)
+* [Gestión de contenedores Docker](documents/gestion_contenedores.md)
 <p align="right"><a href="#top">:arrow_up:</a></p>
