@@ -1,6 +1,6 @@
 # Desplegar servicios
 
-## Configurar Nginx como Proxy Inverso
+## Configurar Nginx como Proxy Inverso  **puerto 80**
 Instala Nginx (si no está instalado):
 ``` bash
 sudo apt-get update
@@ -11,10 +11,10 @@ Crea un Archivo de Configuración para Nginx en el directorio **/etc/nginx/sites
 ``` bash
 server {
     listen 80;
-    server_name *odoo.jorgegr.com*; # Reemplaza con tu dominio o IP pública
+    server_name [odoo.jorgegr.com]; # Reemplaza con tu dominio o IP pública
 
     location / {
-        proxy_pass http://localhost:*8069*;  # Reemplaza por puerto Odoo 
+        proxy_pass http://localhost:[10001];  # Reemplaza por puerto Odoo 
         proxy_set_header Host $host;
         proxy_redirect off;
         proxy_set_header X-Real-IP $remote_addr;
@@ -29,10 +29,10 @@ server {
 ``` 
 Crea un enlace simbólico del archivo de configuración de Nginx **odoo-01** a la carpeta sites-enabled:
 ``` bash
-sudo ln -s /etc/nginx/sites-available/*odoo-01* /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/[odoo-01] /etc/nginx/sites-enabled
 ``` 
 
-## Configura un Certificado SSL (Opcional, para HTTPS):
+## Configura un Certificado SSL (Opcional, para HTTPS) **puerto 443**
 1. Instalar Certbot:
 ``` bash
 sudo apt-get update
@@ -41,7 +41,7 @@ sudo apt-get install certbot python3-certbot-nginx
 2. Obtener un Certificado SSL:
 Usa Certbot para obtener un certificado SSL para tu dominio. Reemplaza tu_dominio con tu nombre de dominio real:
 ``` bash
-sudo certbot --nginx -d [tu_dominio]
+sudo certbot --nginx -d [odoo.jorgegr.com]  # Reemplaza por tu dominio o IP 
 ``` 
 Certbot solicitará una dirección de correo electrónico y pedirá que aceptes los términos de servicio. Luego, te preguntará si deseas redirigir el tráfico HTTP a HTTPS. Asegúrate de seleccionar la opción para redirigir el tráfico para que Certbot configure automáticamente la redirección desde HTTP al puerto 443.
 3. Verificar la Configuración de Nginx:
