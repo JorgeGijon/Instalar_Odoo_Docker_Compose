@@ -1,8 +1,12 @@
 # Programar copia seguridad de BD PostgresSQL
 
+sudo apt install postgresql-client-common
+pg_dump --version
+
+
 1. Ejecutar fichero backup.sh
 ``` bash
-curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/backup.sh | sudo bash 
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/backup.sh | sudo bash e897
 ```
 
 2. Hacer el Script Ejecutable:
