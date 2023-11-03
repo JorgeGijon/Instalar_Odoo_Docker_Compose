@@ -133,27 +133,6 @@ $ sudo rm -r odoo-01  #borrar carpeta contenedora
 ```
 <p align="right"><a href="#top">:arrow_up:</a></p>
 
-<!--
-## Live chat
-
-En [docker-compose.yml#L21](docker-compose.yml#L21), expusimos el puerto **20001** para chat.
-
-Configuración [nginx](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/) para activar la función de chat (en producción):
-
-``` conf
-#...
-server {
-    #...
-    location /longpolling/ {
-        proxy_pass http://0.0.0.0:20001/longpolling/;
-    }
-    #...
-}
-#...
-```
-<p align="right"><a href="#top">:arrow_up:</a></p>
--->
-
 ## docker-compose.yml
 
 * odoo:16.0
@@ -174,29 +153,11 @@ server {
 
 # Anexo
 
-## Instalar el controlador de impresora (Opcional):
-Si necesitas la funcionalidad de impresión en PDF desde Odoo, instala el controlador de impresora CUPS:
-``` bash
-sudo apt-get install -y printer-driver-all
-``` 
-## Generar informes en PDF (wkhtmltopdf):
-Puedes descargar e instalar el paquete desde el sitio web oficial de wkhtmltopdf.
-``` bash
-sudo apt-get install -y fonts-noto-cjk
-sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin
-sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin
-``` 
-## Reinicia el servidor:
-Después de instalar todas las dependencias, reinicia el servidor para asegurarte de que todos los cambios surtan efecto:
-``` bash
-sudo reboot
-``` 
-<p align="right"><a href="#top">:arrow_up:</a></p>
-
-
+## Pasos en despliegue Odoo y configuración servidor
+Después de instalar Odoo:
+* [Despliegue Odoo en puerto 80 y 443](documents/servicios_web.md)
+* [Despliegue Live Chat](documents/live_chat.md)
 
 > [!NOTE]
-> Pasos a seguir en despliegue
-* [Despliegue Odoo en puerto 80 y 443](documents/servicios_web.md)
-
-
+> [Recomendaciones Odoo](documents/recomendaciones_odoo.md)
+<p align="right"><a href="#top">:arrow_up:</a></p>
