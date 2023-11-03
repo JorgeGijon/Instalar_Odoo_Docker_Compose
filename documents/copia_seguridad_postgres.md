@@ -10,7 +10,7 @@ pg_dump --version
 curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/backup.sh | sudo bash -s e897
 ```
 
-2. Crear fichero en `/home/ubuntu/odoo-01/backup.sh`  (copiar contenido fichero [backup.sh](backup.sh))
+2. Crear fichero en `/home/ubuntu/odoo-01/backup.sh`  (copiar contenido fichero [backup.sh](/backup.sh))
 
 3. Hacer el Script Ejecutable:
 ``` bash
