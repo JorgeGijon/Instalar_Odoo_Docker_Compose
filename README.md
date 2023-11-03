@@ -7,7 +7,7 @@
 |
 <b><a href="#complementos">Complementos</a></b>
 |
-<b><a href="#anexo">Anexos</a></b>
+<b><a href="#anexo">Anexo</a></b>
 </p>
 
 <br>
@@ -192,3 +192,11 @@ Después de instalar todas las dependencias, reinicia el servidor para asegurart
 sudo reboot
 ``` 
 <p align="right"><a href="#top">:arrow_up:</a></p>
+
+
+
+> [!NOTE]
+> Pasos a seguir en despliegue
+* [Despliegue Odoo en puerto 80 y 443](documents/servicios_web.md)
+
+
