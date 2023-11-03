@@ -19,5 +19,6 @@ sed -i 's/20001/'$CHAT'/g' $DESTINATION/docker-compose.yml
 docker-compose -f $DESTINATION/docker-compose.yml up -d
 
 echo 'Started Odoo @ http://localhost:'$PORT' | Master Password: '$MASTERPASSWORD' | Live chat port: '$CHAT
+
 # cambiar master password por defecto
 sudo sed -i 's/pass.por.defecto/'$MASTERPASSWORD'/g' "/home/ubuntu/"$DESTINATION"/etc/odoo.conf"
