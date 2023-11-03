@@ -1,5 +1,5 @@
 #!/bin/bash
-ID_CONTENEDOR=$1
+#ID_CONTENEDOR=$1
 
 # Configuración de la base de datos PostgreSQL
 PG_DATABASE=postgres                                #nombre_de_la_base_de_datos
