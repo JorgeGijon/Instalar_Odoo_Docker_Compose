@@ -1,6 +1,6 @@
 # Desplegar servicios
 
-## Configurar Nginx como Proxy Inverso  **puerto 80**
+## Configurar Nginx como Proxy Inverso  (HTTP puerto 80)
 Instala Nginx (si no está instalado):
 ``` bash
 sudo apt-get update
@@ -32,7 +32,7 @@ Crea un enlace simbólico del archivo de configuración de Nginx **odoo-01** a l
 sudo ln -s /etc/nginx/sites-available/[odoo-01] /etc/nginx/sites-enabled
 ``` 
 
-## Configura un Certificado SSL (Opcional, para HTTPS) **puerto 443**
+## Configura un Certificado SSL (HTTPS puerto 443)
 1. Instalar Certbot:
 ``` bash
 sudo apt-get update
