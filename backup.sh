@@ -13,8 +13,8 @@ BACKUP_FILE=backup_$(date +"%Y-%m-%d_%H-%M-%S").sql
 #sudo docker ps
 if [ ! -d $PG_PATH ]; then
     # Si no existe, crea el directorio
-    sudo mkdir -p $PG_PATH
-    sudo chmod $PG_PATH
+    sudo mkdir -p  $PG_PATH
+    sudo chmod 777 $PG_PATH
     echo "Se ha creado el directorio: " $PG_PATH
 else
     # Si ya existe, muestra un mensaje
@@ -22,5 +22,6 @@ else
 fi
 #sudo mkdir /home/ubuntu/copias_seguridad
 #sudo chmod 777 /home/ubuntu/copias_seguridad
-sudo docker exec -t e897 pg_dump -U odoo postgres > /home/ubuntu/copias_seguridad/backup_$(date +"%Y-%m-%d_%H-%M-%S").sql
-sudo find /home/ubuntu/copias_seguridad -type f -name "backup_*.sql" -mtime +7 -exec rm {} \;
+sudo docker exec -t $ID_CONTENEDOR pg_dump -U $PG_USER $PG_DATABASE > $PG_PATH/$BACKUP_FILE
+sudo find $PG_PATH -type f -name "backup_*.sql" -mtime +7 -exec rm {} \;
+echo "Copia de seguridad realizada: "$BACKUP_FILE
