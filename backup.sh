@@ -8,7 +8,8 @@ PG_USER=odoo                #nombre_de_usuario
 PG_PASSWORD=odoo16@2024     #contraseña_del_usuario
 
 # Ruta para almacenar las copias de seguridad
-BACKUP_DIR=/copias_seguridad/postgresql
+BACKUP_DIR=/copias_seguridad
+
 # Nombre del archivo de copia de seguridad
 BACKUP_FILE=backup_$(date +"%Y-%m-%d_%H-%M-%S").sql
 
