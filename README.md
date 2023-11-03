@@ -113,6 +113,7 @@ La carpeta **addons/** contiene complementos personalizados. Simplemente coloque
 
 Después de instalar Odoo se recomiendan algunas opciones:
 * [Despliegue Odoo en puerto 80 y 443](documents/servicios_web.md)
+* [Programar copia seguridad BD PostgresSQL](documents/copia_seguridad_postgres.md)
 * [Despliegue Live Chat](documents/live_chat.md)
 <p align="right"><a href="#top">:arrow_up:</a></p>
 
