@@ -140,13 +140,9 @@ $ sudo rm -r odoo-01  #borrar carpeta contenedora
 
 ## Capturas de pantalla de Odoo 16.0 después de desplegar
 
-<img src="screenshots/odoo-16-welcome-screenshot.png" width="50%" style="margin:0 auto 0 auto;">
-
-<img src="screenshots/odoo-16-apps-screenshot.png" width="50%" style="margin:0 auto 0 auto;">
-
+<img src="screenshots/odoo-16-welcome-screenshot.png" width="49%" style="margin:0 auto 0 auto;"> <img src="screenshots/odoo-16-apps-screenshot.png" width="49%" style="margin:0 auto 0 auto;">
 <!--
 <img src="screenshots/odoo-16-sales-screen.png" width="100%">
-
 <img src="screenshots/odoo-16-product-form.png" width="100%">
 -->
 <p align="right"><a href="#top">:arrow_up:</a></p>
