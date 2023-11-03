@@ -24,14 +24,11 @@ PG_USER=odoo                                        #nombre_de_usuario
 PG_PATH=/home/ubuntu/copias_seguridad               #ruta local donde colocar carpeta backups
 BACKUP_FILE=backup_$(date +"%Y-%m-%d_%H-%M-%S").sql
 
-# Comprobar carpeta backups y permisos
-if [ ! -d $PG_PATH ]; then
-    # Si no existe, crea el directorio
-    sudo mkdir -p  $PG_PATH
-    sudo chmod 777 $PG_PATH
-    echo "Se ha creado el directorio: " $PG_PATH
+if [ ! -d $PG_PATH ]; then    
+    sudo mkdir -p  $PG_PATH # Si no existe, crea el directorio
+    sudo chmod 777 $PG_PATH # Permisos
+    echo "No existe el directorio: " $PG_PATH
 else
-    # Si ya existe, muestra un mensaje
     echo "El directorio "$PG_PATH" ya existe."
 fi
 # Realizar la copia de seguridad utilizando pg_dump
@@ -43,7 +40,8 @@ echo "Copia de seguridad realizada: "$BACKUP_FILE
 
 3. Hacer el Script Ejecutable:
 ``` bash
-sudo chmod +x backup.sh
+sudo chmod +x backup.sh     #convertir fichero en ejecutable
+./backup.sh                 #ejecutar fichero y probarlo      
 ``` 
 
 4. Configurar un Cronjob:

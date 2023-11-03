@@ -11,7 +11,7 @@ BACKUP_FILE=backup_$(date +"%Y-%m-%d_%H-%M-%S").sql
 if [ ! -d $PG_PATH ]; then
     # Si no existe, crea el directorio
     sudo mkdir -p  $PG_PATH
-    sudo chmod 777 $PG_PATH
+    sudo chmod -R 777 $PG_PATH
     echo "Se ha creado el directorio: " $PG_PATH
 else
     # Si ya existe, muestra un mensaje
