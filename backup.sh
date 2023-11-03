@@ -13,5 +13,5 @@ BACKUP_FILE=backup_$(date +"%Y-%m-%d_%H-%M-%S").sql
 #sudo docker ps
 sudo mkdir /home/ubuntu/copias_seguridad
 sudo chmod 777 /home/ubuntu/copias_seguridad
-sudo docker exec -it e897 pg_dump -U odoo postgres > /home/ubuntu/copias_seguridad/backup_$(date +"%Y-%m-%d_%H-%M-%S").sql
+sudo docker exec -t e897 pg_dump -U odoo postgres > /home/ubuntu/copias_seguridad/backup_$(date +"%Y-%m-%d_%H-%M-%S").sql
 sudo find /home/ubuntu/copias_seguridad -type f -name "backup_*.sql" -mtime +7 -exec rm {} \;
