@@ -11,10 +11,10 @@ Crea un Archivo de Configuración para Nginx en el directorio **/etc/nginx/sites
 ``` bash
 server {
     listen 80;
-    server_name [odoo.jorgegr.com]; # Reemplaza con tu dominio o IP pública
+    server_name *odoo.jorgegr.com*; # Reemplaza con tu dominio o IP pública
 
     location / {
-        proxy_pass http://localhost:[8069];  # Reemplaza por puerto Odoo 
+        proxy_pass http://localhost:*8069*;  # Reemplaza por puerto Odoo 
         proxy_set_header Host $host;
         proxy_redirect off;
         proxy_set_header X-Real-IP $remote_addr;
@@ -29,7 +29,7 @@ server {
 ``` 
 Crea un enlace simbólico del archivo de configuración de Nginx **odoo-01** a la carpeta sites-enabled:
 ``` bash
-sudo ln -s /etc/nginx/sites-available/[odoo-01] /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/*odoo-01* /etc/nginx/sites-enabled
 ``` 
 
 ## Configura un Certificado SSL (Opcional, para HTTPS):
