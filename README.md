@@ -142,7 +142,7 @@ $ sudo rm -r odoo-01  #borrar carpeta contenedora
 
 <img src="screenshots/odoo-16-welcome-screenshot.png" width="50%" style="margin:0 auto 0 auto;">
 
-<img src="screenshots/odoo-16-apps-screenshot.png" width="100%">
+<img src="screenshots/odoo-16-apps-screenshot.png" width="50%" style="margin:0 auto 0 auto;">
 
 <!--
 <img src="screenshots/odoo-16-sales-screen.png" width="100%">
