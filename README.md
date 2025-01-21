@@ -22,7 +22,7 @@ $ sudo apt-get install curl
 $ sudo yum install curl
 ```
 Ejecutar siguiente `curl` para configurar la primera instancia de Odoo @ `localhost:10001`. Argumentos por defecto para reemplazar:
-* **run_v16.sh**: cambiar para diferentes **versiones** _v16/_v17/_v18
+* **run_v{}.sh**: cambiar para diferentes **versiones** _v16/_v17/_v18
 * **odoo-01**: carpeta de implementación de Odoo
 * **10001**:    puerto Odoo
 * **20001**:    puerto `live chat`
@@ -32,7 +32,7 @@ curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compos
 ```
 
 y/o ejecute el siguiente para configurar otra instancia Odoo @ `localhost:10002`. Argumentos por defecto para reemplazar:
-* **run_v16.sh**: cambiar para diferentes **versiones** _v16/_v17/_v18
+* **run_v{}.sh**: cambiar para diferentes **versiones** _v16/_v17/_v18
 * **odoo-02**: carpeta de implementación de Odoo
 * **10002**:    puerto Odoo
 * **20001**:    puerto `live chat`
