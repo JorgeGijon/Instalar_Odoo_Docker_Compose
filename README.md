@@ -14,7 +14,7 @@
 
 ## Instalación
 
-Instalar [docker](documents/instalar_docker.md) y [docker-compose](https://docs.docker.com/compose/install/).
+Instalar [docker](documents/instalar_docker.md) y [docker-compose](documents/instalar_docker_compose.md).
 Si `curl` no está disponible, instalar:
 ``` bash
 $ sudo apt-get install curl
