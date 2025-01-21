@@ -47,7 +47,7 @@ Inicie el contenedor:
 ``` sh
 docker-compose up
 ```
-Luego abra `localhost:10001` para acceder a Odoo 16.0.
+Luego abra `localhost:10001` para acceder a Odoo _v16/_v17/_v18.
 
 - **Si tiene algún problema con los permisos**, cambie el permiso de la carpeta para asegurarse de que el contenedor pueda acceder al directorio:
 
