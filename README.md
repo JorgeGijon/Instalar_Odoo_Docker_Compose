@@ -1,4 +1,4 @@
-# Desplegar multiples instancias Odoo 16.0, con Docker Compose, en servidor Linux Ubuntu.
+# Desplegar multiples instancias Odoo v16, v17 y v18, con Docker Compose, en servidor Linux Ubuntu.
 <!-- Menu  -->
 <p align="center">
 <b><a href="#instalación">Instalación</a></b>
@@ -22,21 +22,23 @@ $ sudo apt-get install curl
 $ sudo yum install curl
 ```
 Ejecutar siguiente `curl` para configurar la primera instancia de Odoo @ `localhost:10001`. Argumentos por defecto para reemplazar:
+* **run_v16.sh**: cambiar para diferentes **versiones** _v16/_v17/_v18
 * **odoo-01**: carpeta de implementación de Odoo
 * **10001**:    puerto Odoo
 * **20001**:    puerto `live chat`
 * **pass.por.defecto**:    `master password` BD
 ``` bash
-curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-01 10001 20001 pass.por.defecto
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run_v16.sh | sudo bash -s odoo-01 10001 20001 pass.por.defecto
 ```
 
 y/o ejecute el siguiente para configurar otra instancia Odoo @ `localhost:10002`. Argumentos por defecto para reemplazar:
+* **run_v16.sh**: cambiar para diferentes **versiones** _v16/_v17/_v18
 * **odoo-02**: carpeta de implementación de Odoo
 * **10002**:    puerto Odoo
 * **20001**:    puerto `live chat`
 * **pass.por.defecto**:    `master password` BD
-``` bash  run.sh
-curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run.sh | sudo bash -s odoo-02 10002 20001 pass.por.defecto
+``` bash
+curl -s https://raw.githubusercontent.com/JorgeGijon/Instalar_Odoo_Docker_Compose/main/run_v16.sh | sudo bash -s odoo-02 10002 20001 pass.por.defecto
 ```
 
 ## Uso
